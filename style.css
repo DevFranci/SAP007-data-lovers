@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Federo Custom";
+  src: url(./font/Federo-Regular.ttf) format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Federo Custom";
+  height: 100%;
+  margin: 0;
+}
+.header {
+  background-color: #7a4196;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  color: #fff;
+  justify-content: space-around;
+}
+.header img {
+  width: 44px;
+  height: 36px;
+
+}
+.header nav {
+  display: flex;  
+  align-items: center;
+  
+}
+.header a{
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.filter{
+  width: 100%;
+  background: #3B1B4A87;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter select{
+  background: #7A4196;
+  height: 39px;
+  color: white;
+  width: 244px;
+  border: none;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  font-size: 20px;
+  font-family: Federo Custom;
+  text-align: center;
+}
+.filter button {
+  background: #B580CF87;
+  border: none;
+  color: white;
+  width: 150px;
+  height: 39px;
+  font-size: 20px;
+  font-family: inherit;
+}
+.filter input {
+  align-self: stretch;
+  width: 245px;
+  border: none;
+  color: white;
+  background: #B580CF87;
+  font-family: inherit;
+  font-size: 20px;
+
+}
+.mr10  {
+  margin-right: 10px;
+}
+.ml12 {
+  margin-left: 12px;
+}
+.aggregateCalculation {
+  background: #3B1B4A87;
+  width:50%;
+  margin-top: 24px;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.aggregateCalculation p {
+  margin-top: 10px;
+margin-bottom: 10px;
+}
+.card {
+  background: #3B1B4A87;
+  border-radius:  31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 311px;
+  height:455px;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 47px;
+}
+.card picture {
+  width: 100%;
+  height: 100%;
+  padding: 17px 27px 17px 27px;
+
+}
+#root {
+  display: grid;  
+  grid-template-columns: auto auto auto;
+  grid-gap: 100px;
+  margin-top: 24px;
+}
+.bg {
+  background-image: url("images/img.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+}
