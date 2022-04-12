@@ -1,12 +1,84 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div id="root"></div>
+  <body class="bg">
+    <header class="header">
+      <nav>
+        <img
+          class="mr10"
+          src="images/homepage.svg"
+          alt="icone para voltar para home page"
+        />
+        <h4>Movies Page</h4>
+      </nav>
+
+      <h2>Studio Ghibli for lovers fans</h2>
+      <nav>
+        <a href="mailto:devfranciele@gmail.com" rel="noopener noreferrer">
+          <h4 class="mr10">Email</h4>
+          <img src="images/email.svg" alt="icone do email" />
+        </a>
+      </nav>
+      <nav>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/DevFranci"
+        >
+          <h4 class="mr10">Follow me in</h4>
+          <img src="images/github.svg" alt="icone do github" />
+        </a>
+      </nav>
+      <nav>
+        <h4 class="mr10">Compartilhe</h4>
+        <img src="images/compartilhar.svg" alt="icone para compartilhar" />
+      </nav>
+    </header>
+    <main>
+      <form>
+      <section class="filter">
+        <img class="ml12" src="images/filtro.svg" alt="icone de filtro" />
+        <select id="selectDirector">
+          <option disabled selected>Filtre por diretor</option>
+          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+          <option value="Isao Takahata">Isao Takahata</option>
+          <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+          <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+          <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+          <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+        </select>
+        <select id="selectProducer">
+          <option disabled selected>Filtre por produtor</option>
+          <option value="Isao Takahata">Isao Takahata</option>
+          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+          <option value="Toru Hara">Toru Hara</option>
+          <option value="Toshio Suzuki">Toshio Suzuki</option>
+          <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
+        </select>
+        <select id="selectSort">
+          <option disabled selected>Ordenar por</option>
+          <option value="rt_score,ascending">menor nota</option>
+          <option value="rt_score,descending">maior nota</option>
+          <option value="title,ascending">Filmes A - Z</option>
+          <option value="title,descending">Filmes Z - A</option>
+          <option value="release_date,descending">Filmes mais novos</option>
+          <option value="release_date,ascending">Filmes mais antigos</option>
+        </select>
+        <button id="clearButton" type="reset">Limpar</button>
+        <input id="inputFilm" type="text" placeholder="Pesquise por filme"></input>
+      </section>
+    </form>
+      <section class="cards">
+        <div class="aggregateCalculation">
+          <p>Você está vendo todos os filmes</p>
+        </div>
+        <div id="root"></div>
+      </section>
+    </main>
     <script src="main.js" type="module"></script>
   </body>
 </html>
