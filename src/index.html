@@ -39,41 +39,41 @@
       </nav>
     </header>
     <main>
-      <form>
-      <section class="filter">
-        <img class="ml12" src="images/filtro.svg" alt="icone de filtro" />
-        <select id="selectDirector">
-          <option disabled selected>Filtre por diretor</option>
-          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
-          <option value="Isao Takahata">Isao Takahata</option>
-          <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
-          <option value="Hiroyuki Morita">Hiroyuki Morita</option>
-          <option value="Gorō Miyazaki">Gorō Miyazaki</option>
-          <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
-        </select>
-        <select id="selectProducer">
-          <option disabled selected>Filtre por produtor</option>
-          <option value="Isao Takahata">Isao Takahata</option>
-          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
-          <option value="Toru Hara">Toru Hara</option>
-          <option value="Toshio Suzuki">Toshio Suzuki</option>
-          <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
-        </select>
-        <select id="selectSort">
-          <option disabled selected>Ordenar por</option>
-          <option value="rt_score,ascending">menor nota</option>
-          <option value="rt_score,descending">maior nota</option>
-          <option value="title,ascending">Filmes A - Z</option>
-          <option value="title,descending">Filmes Z - A</option>
-          <option value="release_date,descending">Filmes mais novos</option>
-          <option value="release_date,ascending">Filmes mais antigos</option>
-        </select>
-        <button id="clearButton" type="reset">Limpar</button>
-        <input id="inputFilm" type="text" placeholder="Pesquise por filme"></input>
-      </section>
-    </form>
+      <form id="form">
+        <section class="filter">
+          <img class="ml12" src="images/filtro.svg" alt="icone de filtro" />
+          <select id="selectDirector">
+            <option disabled selected>Filtre por diretor</option>
+            <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+            <option value="Isao Takahata">Isao Takahata</option>
+            <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+            <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+            <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+            <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+          </select>
+          <select id="selectProducer">
+            <option disabled selected>Filtre por produtor</option>
+            <option value="Isao Takahata">Isao Takahata</option>
+            <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+            <option value="Toru Hara">Toru Hara</option>
+            <option value="Toshio Suzuki">Toshio Suzuki</option>
+            <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
+          </select>
+          <select id="selectSort">
+            <option disabled selected>Ordenar por</option>
+            <option value="rt_score,ascending">menor nota</option>
+            <option value="rt_score,descending">maior nota</option>
+            <option value="title,ascending">Filmes A - Z</option>
+            <option value="title,descending">Filmes Z - A</option>
+            <option value="release_date,descending">Filmes mais novos</option>
+            <option value="release_date,ascending">Filmes mais antigos</option>
+          </select>
+          <button id="clearButton" type="reset">Limpar</button>
+          <input id="inputFilm" type="text" placeholder="Pesquise por filme" />
+        </section>
+      </form>
       <section class="cards">
-        <div class="aggregateCalculation">
+        <div id="aggregateCalculation" class="aggregateCalculation">
           <p>Você está vendo todos os filmes</p>
         </div>
         <div id="root"></div>

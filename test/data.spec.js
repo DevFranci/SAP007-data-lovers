@@ -1,23 +1,28 @@
-import { example, anotherExample } from '../src/data.js';
+import {
+  filterDirector,
+  filterProducer,
+  sortData,
+  filterFilm,
+  computeStats,
+} from "./data.js";
+import data from "./data/ghibli/ghibli.js";
 
-
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+describe("filter director test", () => {
+  it("is a function", () => {
+    expect(typeof filterDirector).toBe("function");
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it("should return 9 films with Hayo Miyazaki", () => {
+    expect(filterDirector(data.films, "Hayo Miyazaki").length).toBe(9);
   });
 });
 
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
+describe("anotherExample", () => {
+  it("is a function", () => {
+    expect(typeof anotherExample).toBe("function");
   });
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+  it("returns `anotherExample`", () => {
+    expect(anotherExample()).toBe("OMG");
   });
 });

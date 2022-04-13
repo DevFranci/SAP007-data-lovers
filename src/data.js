@@ -7,6 +7,14 @@ export const filterDirector = (films, directorName) => {
 export const filterProducer = (films, producerName) => {
   return films.filter((film) => film.producer === producerName);
 };
+export const filterFilm = (films, filmName) => {
+  return films.filter(
+    (film) => film.title.toLowerCase().indexOf(filmName.toLowerCase()) !== -1
+  );
+};
+export const computeStats = (result, films) => {
+  return (result.length / films.length) * 100;
+};
 
 export const sortData = (films, sortBy, sortOrder) => {
   return films.sort((film1, film2) => {
